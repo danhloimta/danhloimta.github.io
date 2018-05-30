@@ -12,7 +12,7 @@ $(document).ready(function(){
 			animateIn: 'zoomIn',
 			autoplayTimeout: 3000
 		});
-    $('#nav li a:nth-child(1)').click(function(event) {
+    $('#nav li:nth-child(2) a').click(function(event) {
     	$('.about').toggleClass('trai');
     	return false;
     });

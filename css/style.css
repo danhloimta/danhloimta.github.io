@@ -6,6 +6,29 @@ body{
     font-family:  segoe ui light;
     
 }
+::selection{
+    background-color: #32ff7e;
+
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4d91de; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4d91de;
+}
 
 div#menu {
     width: 230px;
@@ -19,6 +42,7 @@ img.w-100 {
     width: 140px;
     margin:  auto;
     border: 3px solid;
+    border-radius: 50%;
 }
 
 .info {
@@ -52,8 +76,12 @@ ul#nav {
     font-size: 16px;   
 }
 
+#nav a.active{
+    color: #4d91de;
+}
+
 #nav a:hover {
-    color: #fff;
+    color: #4d91de;
     text-decoration:  none;
 }
 
@@ -108,16 +136,16 @@ ul#nav {
     visibility: hidden;
     position: relative;
     right: -120%;
-    top: -555px;
+    top: -570px;
 }
 .about.trai{
     transform: translateX(0px);
     opacity: 1;
     visibility: visible;
-    top: -539px;
+    top: -570px;
     right: 0;
     max-height:  100%;
-    overflow-y: scroll;
+   
     z-index: 2;
 }
 
@@ -138,8 +166,15 @@ ul#nav {
 }
 
 ul.infome {
-    padding-top: 30px;
     padding-bottom: 28px;
+}
+
+.row h1 {
+    margin-top: 0;
+}
+
+.a-content .row {
+    padding-top: 35px;
 }
 
 li {
@@ -172,21 +207,45 @@ li {
 
 .social a {
     font-size: 16px;
-    border:  1px solid gray;
     padding: 10px;
+    color: #fff;
+    border-radius: 50%;
 }
 
 .social i {
     width: 20px;
     height: 20px;
     text-align:  center;
-    color: #ffffffb5;
-}
 
+}
 
 .social a:hover {
     color: #fff;
 }
+
+a.fb {
+    background: #3B5998;
+    border-radius: 50%;
+    color: #fff;
+}
+
+a.gg {
+    background: #dd4b39;
+}
+
+a.in {
+    background: #125688;
+}
+
+a.tw {
+    background: #55ACEE;
+}
+
+a.git {
+    background: #45bbff;
+    background: #00b489;
+}
+
 
 h1.name {
     position:  relative;
