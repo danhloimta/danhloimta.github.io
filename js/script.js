@@ -2,6 +2,10 @@ $(document).ready(function(){
 	
 	new WOW().init();
 	
+	$('i.fas.fa-bars').click(function(event) {
+		$('#menu').toggleClass('hien');
+	});
+
     $('.owl-carousel').owlCarousel({
 			loop: true,
 			nav: false,
@@ -15,9 +19,10 @@ $(document).ready(function(){
 		});
     
     $('#nav li a').click(function(event) {
-    	$('.about, .resume').removeClass('trai');
+    	$('.about').removeClass('trai');
     	$('.resume').removeClass('phai');
     	$('.contactme').removeClass('xuong');
+    	$('#menu').toggleClass('hien');
     	return false;
     });
 
