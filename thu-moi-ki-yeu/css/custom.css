@@ -1,0 +1,30 @@
+.item.text-center {
+    border: 1px solid #dad4d487;
+    padding: 20px;
+    min-height: 245px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important
+}
+
+.item.text-center:hover {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    animation: sonar 1s linear 0.5 infinite ease-in-out;
+}
+
+@keyframes sonar{
+    0% {
+        border: 1px solid green;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px green, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px green, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.text-center.search-head p{
+    text-align: justify;
+}
