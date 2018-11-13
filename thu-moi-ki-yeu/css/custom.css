@@ -28,3 +28,30 @@
 .text-center.search-head p{
     text-align: justify;
 }
+
+.hero-section {
+    background: url(../images/hero-image.jpg) no-repeat top;
+    background-size: cover;
+    padding-bottom: 265px;
+    padding-top: 175px;
+    background-color: #000000ad;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    position: relative;
+    top: -75px;
+    left: 0;
+}
+
+.bg {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    background: transparent;
+}
+
+#navigation>ul>li>a {
+    color: #fff;
+}
