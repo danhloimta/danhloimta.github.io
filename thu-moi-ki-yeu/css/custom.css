@@ -63,6 +63,14 @@
     display: none;
 }
 
+a.logo {
+    color: #ff4d4d;
+    font-size: 33px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
 @media (max-width: 768px) {
     .info {
         opacity: 1;
@@ -74,7 +82,7 @@
     p.text-de {
         margin: 0px;
         text-align: justify;
-        padding: 0 14px;
+        padding: 0;
     }
 
     .circle-icon {
@@ -83,5 +91,22 @@
         font-size: 60px;
         line-height: 100px;
         padding: 0;
+    }
+
+    ul.open {
+        background: #444048;
+    }
+
+    #navigation.small-screen>ul>li {
+        padding-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header-logo {
+        padding-top: 10px;
+        padding-bottom: 16px;
+        text-align: center;
+        background: #716a6a33;
     }
 }
