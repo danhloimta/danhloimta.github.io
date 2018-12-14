@@ -1,0 +1,251 @@
+.room-suite {
+    background-color: #363636;
+    position: relative;
+    top: -303px;
+}
+.rs {
+    background: rgba(0, 0, 0, 0.04) url(../img/room/1.jpg) top left repeat;
+    background-size: cover;
+    height: 565px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.r-text {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+.r-text h1 {
+    color: white;
+    font-size: 85px;
+    font-family: nimbus-reg;
+    font-weight: 500;
+}
+
+.rs:before {
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #292424a8;
+    position: absolute;
+}
+
+.r-menu {
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+}
+
+ul.r-menubar {
+    display: flex;
+}
+
+ul.r-menubar li {
+    list-style: none;
+    margin-right: 12px;
+    color: white;
+}
+
+ul.r-menubar a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.r-menubar a.active {
+    color: #baa256;
+}
+
+.text-color {
+    color: #baa256;
+}
+
+.rs-room, .rs-suite {
+    display: flex;
+    padding-top: 50px;
+    min-height: 418px;
+}
+
+.luxury-text {
+    margin-left: 16%;
+}
+
+.luxury {
+    width: 40%;
+    padding: 100px 120px;
+    background-color: #4e4b4b;
+}
+
+.col, .col-2 {
+    width: 20%;
+}
+
+.classic, .master, .superior {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rs-room h1, .rs-suite h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.rs-room h3, .rs-suite h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: nimbus-reg;
+}
+
+.rs-room p, .rs-suite p {
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: nimbus-reg;
+}
+
+.luxury-text h3 {
+    position: relative;
+}
+
+.luxury-text h3:after {
+    position: absolute;
+    background-color: #baa256;
+    bottom: -6px;
+    left: 0;
+    width: 22%;
+    height: 1px;
+    content: '';
+}
+
+.classic-text {
+    text-align: center;
+    position: relative;
+}
+.rs-gra {
+    width: 63%;
+    margin: auto;
+    background-color: #494441;
+    height: 43%;
+    padding: 100px 20px 0;
+    clip-path: polygon(0% 0%, 0% 75%, 50% 100%, 50% 100%, 100% 75%, 100% 0);
+    position: absolute;
+    left: 9%;
+    transform: translateY(-300px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.rs-gra-2 {
+    width: 100%;
+    margin: auto;
+    background-color: #494441;
+    height: 100%;
+    position: absolute;
+    transform: translateY(-300px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.classic:before, .master:before, .superior:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: 0.5s;
+}
+
+.col:hover .classic:before, .col-2:hover .master:before, .col-2.nth-2:hover .superior:before {
+    background-color: transparent;
+    display: block;
+}
+.col:hover .rs-gra, .col-2:hover .rs-gra-2 {
+    opacity: 0.7;
+    transform: translateY(0);
+}
+
+.col, .col-2 {
+    display: flex;
+}
+
+.classic-text, .master-text, .superior-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 9;
+}
+
+.rs-room a, .rs-suite a {
+    text-decoration: none;
+}
+
+.rs-room .col {
+    background-image: url('../img/room/003.png');
+}
+
+.rs-room .col-2 {
+    background-image: url('../img/room/001.png');
+}
+
+.rs-room .col-2.nth-2 {
+    background-image: url('../img/room/002.png');
+}
+
+.rs-suite .col {
+    background-image: url('../img/room/004.png');
+}
+
+.rs-suite .col-2 {
+    background-image: url('../img/room/012.png');
+}
+
+.rs-suite .col-2.nth-2 {
+    background-image: url('../img/room/013.png');
+}
+
+.col, .col-2{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.swiper-container {
+    width: 60%;
+}
+
+#arrow-right i.fas.fa-angle-right, #arrow-left i.fas.fa-angle-left {
+    color: white;
+    background-color: #baa256;
+    padding: 0px 4px;
+}
+
+.swiper-button-next {
+    margin-top: -6px;
+    right: 6px;
+    height: 15px;
+    top: 96.5%;
+    background: none;
+}
+
+.swiper-button-prev {
+    top: 96.5%;
+    height: 15px;
+    left: auto;
+    right: 51px;
+    margin-top: -6px;
+    background: none;
+}

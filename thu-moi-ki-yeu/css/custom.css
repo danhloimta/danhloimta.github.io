@@ -69,7 +69,18 @@ a.logo {
     font-family: 'Dancing Script', cursive;
 }
 
+.vendor-img {
+    max-height: 184px;
+    overflow: hidden;
+}
 
+.post-img img {
+    height: 170px;
+}
+
+body {
+    overflow-x: hidden;
+}
 
 @media (max-width: 768px) {
     .info {
