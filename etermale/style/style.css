@@ -1,6 +1,7 @@
 @import "header.css";
 @import "room.css";
 @import "footer.css";
+@import "location.css";
 
 @font-face {
     font-family: baskerville-old-face;
@@ -18,7 +19,7 @@
 }
 
 @font-face {
-    font-family: nimbus-light           ;
+    font-family: nimbus-light;
     src: url(../Font/Nimbus-Sans-D-OT-Light-Extended_32750.ttf);
 }
 
