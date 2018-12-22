@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TimeTable</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-3">
+                <div class="alert alert-success mt-3" role="alert">
+                    <strong>TimeTable</strong>
+                </div>
+            </div>
+        </div>
+        <form action=""></form>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="">Nhập tên môn học</label>
+                        <input type="text" name="" id="" class="form-control subject" placeholder="Ví dụ: Triết" aria-describedby="helpId" required>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="">Thứ</label>
+                        <input type="number" name="number" id="" class="form-control date" placeholder="Ví dụ: 2" aria-describedby="helpId" min="2" max="6" required>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="">Tiết</label>
+                        <input type="text" name="" id="lesson" class="form-control" placeholder="Ví dụ: 2-3" aria-describedby="helpId" min="1" max="12" required>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="">Giảng đường</label>
+                        <input type="text" name="" id="" class="form-control position" placeholder="Ví dụ:  H5512" aria-describedby="helpId" required>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="">Mã MH</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Có thể có hoặc không" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-info add" type="submit">Add</button>
+        </form>
+        <div class="row">
+
+        </div>
+        <div class="row mt-4">
+                <div class="col-sm-2">
+                    <b>Tiết/ Thứ</b>
+                    <div class="content mt-4">
+                        <div class="t-row">
+                            <span>Tiết 1</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 2</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 3</span>
+                        </div>
+                        <div class="t-row">
+                           <span> Tiết 4</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 5</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 6</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 7</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 8</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 9</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 10</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 11</span>
+                        </div>
+                        <div class="t-row">
+                            <span>Tiết 12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 t2">
+                    <b>Thứ 2</b>
+                </div>
+                <div class="col-sm-2 t3">
+                    <b>Thứ 3</b>
+                </div>
+                <div class="col-sm-2 t4">
+                    <b>Thứ 4</b>
+                </div>
+                <div class="col-sm-2 t5">
+                    <b>Thứ 5</b>
+                </div>
+                <div class="col-sm-2 t6">
+                    <b>Thứ 6</b>
+                </div>
+        </div>
+        <!-- <div class="row">
+            <table class="table table-hover">
+                <thead class="thead-default">
+                    <tr>
+                        <th width="10%">Thứ</th>
+                        <th>T2</th>
+                        <th>T3</th>
+                        <th>T4</th>
+                        <th>T5</th>
+                        <th>T6</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">7</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">9</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">10</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">11</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">12</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div> -->
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
