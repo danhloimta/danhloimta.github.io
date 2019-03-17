@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMART LIGHTING SYSTEM</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Vue.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="row">
+                <div class="col-md-5">
+                    <nav class="nav">
+                        <a href="index.html" class="nav-link">
+                            <img src="img/Vue.png" alt="" class="logo">
+                        </a>
+                        <a class="nav-link" href="setting.html">Cài đặt</a>
+                    </nav>
+                </div>
+                <div class="col-md-2">
+                    <div id="time"></div>
+                </div>
+                <div class="col-md-5">
+                    <ul class="nav justify-content-end menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">ĐK Nhóm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="script.html">ĐK Kịch bản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="main">
+        <div class="container content pt-4 s-equip">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-link">
+                        <a href="#" class="">Cài đặt </a>
+                        <span> / Thiết bị</span>
+                    </div>
+                    <div class="d-tab">
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade show active">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="search mb-4">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Thêm thiết bị</button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+
+                                            </div>
+                                        </div>
+                                        <div class="equipment">
+                                            <table class="table table-hover" id="datatable">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">STT</th>
+                                                        <th scope="col">Tên thiết bị</th>
+                                                        <th scope="col">Mã điều khiển</th>
+                                                        <th scope="col">Mã thiết bị</th>
+                                                        <th scope="col">Công suất</th>
+                                                        <th scope="col">Min</th>
+                                                        <th scope="col">Max</th>
+                                                        <th scope="col">Hoạt động</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>TEST1</td>
+                                                        <td>OUT1</td>
+                                                        <td>11</td>
+                                                        <td>20W</td>
+                                                        <td>1</td>
+                                                        <td>1000</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>TEST2</td>
+                                                        <td>OUT2</td>
+                                                        <td>11</td>
+                                                        <td>20W</td>
+                                                        <td>1</td>
+                                                        <td>1000</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>TEST3</td>
+                                                        <td>OUT3</td>
+                                                        <td>11</td>
+                                                        <td>20W</td>
+                                                        <td>1</td>
+                                                        <td>1000</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>TEST4</td>
+                                                        <td>OUT4</td>
+                                                        <td>11</td>
+                                                        <td>20W</td>
+                                                        <td>1</td>
+                                                        <td>1000</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>TEST5</td>
+                                                        <td>OUT5</td>
+                                                        <td>11</td>
+                                                        <td>20W</td>
+                                                        <td>1</td>
+                                                        <td>1000</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>TEST6</td>
+                                                        <td>OUT6</td>
+                                                        <td>11</td>
+                                                        <td>20W</td>
+                                                        <td>1</td>
+                                                        <td>1000</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>TEST7</td>
+                                                        <td>OUT7</td>
+                                                        <td>11</td>
+                                                        <td>20W</td>
+                                                        <td>1</td>
+                                                        <td>1000</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="icon">
+                    <button class="power"><i class="fas fa-power-off"></i></button>
+                </div>
+                <div class="ft">
+                    <div class="form-group">
+                        <div class="select">
+                            <select name="" id="" class="form-control system">
+                                <option value="1">Online mode</option>
+                                <option value="0">Offline mode</option>
+                            </select>
+                        </div>
+                        <label for="" class="system-name"><span>SMART LIGHTING SYSTEM</span></label>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Thêm thiết bị</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Tên thiết bị</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập tên thiết bị" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mã điều khiển</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập mã điều khiển" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Chọn kiểu</label>
+                        <select name="status" id="stt" class="form-control">
+                            <option value="1">Kiểu 1</option>
+                            <option value="0">Kiểu 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Công suất tiêu thụ</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Công suất tiêu thụ" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Giá trị mặc định</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập giá trị mặc định" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Ngưỡng nhỏ nhất</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập ngưỡng nhỏ nhất" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Ngưỡng lớn nhất</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập ngưỡng lớn nhất" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Chọn nhóm</label>
+                        <select name="status" id="stt" class="form-control">
+                            <option value="1">Nhóm 1</option>
+                            <option value="0">Nhóm 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Ghi chú</label>
+                        <textarea name="description" id="" rows="4" placeholder="Ghi chú" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Thêm</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#datatable').DataTable({
+                "language": {
+                    "sSearch": "Tìm Kiếm:",
+                    "sProcessing":   "Đang xử lý...",
+                    "sLengthMenu":   "Xem _MENU_ mục",
+                    "sZeroRecords":  "Không tìm thấy dòng nào phù hợp",
+                    "sInfo":         "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
+                    "sInfoEmpty":    "Đang xem 0 đến 0 trong tổng số 0 mục",
+                    "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+                    "sInfoPostFix":  "",
+                    "sUrl":          "",
+                    "oPaginate": {
+                        "sFirst":    "Đầu",
+                        "sPrevious": "Trước",
+                        "sNext":     "Tiếp",
+                        "sLast":     "Cuối"
+                    }
+                }
+            });
+        } );
+    </script>
+</body>
+</html>

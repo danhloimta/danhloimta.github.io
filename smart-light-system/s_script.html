@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMART LIGHTING SYSTEM</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Vue.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="row">
+                <div class="col-md-5">
+                    <nav class="nav">
+                        <a href="index.html" class="nav-link">
+                            <img src="img/Vue.png" alt="" class="logo">
+                        </a>
+                        <a class="nav-link" href="setting.html">Cài đặt</a>
+                    </nav>
+                </div>
+                <div class="col-md-2">
+                    <div id="time"></div>
+                </div>
+                <div class="col-md-5">
+                    <ul class="nav justify-content-end menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">ĐK Nhóm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="script.html">ĐK Kịch bản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="main">
+        <div class="container content pt-4 s-equip">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-link">
+                        <a href="#" class="">Cài đặt </a>
+                        <span> / Kịch bản điều khiển</span>
+                    </div>
+                    <div class="d-tab">
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade show active">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="search mb-4">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Thêm kịch bản</button>
+                                        </div>
+                                        <div class="equipment">
+                                            <table class="table table-hover" id="datatable">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">STT</th>
+                                                        <th scope="col">Tên kịch bản</th>
+                                                        <th scope="col">Nhóm thuộc</th>
+                                                        <th scope="col">Chi tiết</th>
+                                                        <th scope="col">Thao tác</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Kịch bản 1</td>
+                                                        <td>
+                                                            <span class="badge badge-info">Văn phòng</span>
+                                                            <span class="badge badge-info"> Khu công cộng</span>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0"><i class="fas fa-info-circle"></i></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="icon">
+                    <button class="power"><i class="fas fa-power-off"></i></button>
+                </div>
+                <div class="ft">
+                    <div class="form-group">
+                        <div class="select">
+                            <select name="" id="" class="form-control system">
+                                <option value="1">Online mode</option>
+                                <option value="0">Offline mode</option>
+                            </select>
+                        </div>
+                        <label for="" class="system-name"><span>SMART LIGHTING SYSTEM</span></label>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Tạo kịch bản</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Tên kịch bản</label>
+                        <input type="text" name="" id="" class="form-control col-sm-6" placeholder="Nhập tên nhóm" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group mt-4 s-group">
+                        <h5 class="text-center">Nhóm điều khiển</h5>
+                        <span class="del"><button class="btn-del"><i class="fas fa-minus"></i></button></span>
+                        <div class="row mt-4">
+                            <div class="form-group col-sm-6">
+                                <label for="">Dạng nhóm</label>
+                                <select name="status" id="stt" class="form-control">
+                                    <option value="1">Nhóm 1</option>
+                                    <option value="0">Nhóm 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="">Chọn nhóm</label>
+                                <select name="status" id="stt" class="form-control">
+                                    <option value="1">Nhóm 1</option>
+                                    <option value="0">Nhóm 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Thêm</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#datatable').DataTable({
+                "language": {
+                    "sSearch": "Tìm Kiếm:",
+                    "sProcessing":   "Đang xử lý...",
+                    "sLengthMenu":   "Xem _MENU_ mục",
+                    "sZeroRecords":  "Không tìm thấy dòng nào phù hợp",
+                    "sInfo":         "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
+                    "sInfoEmpty":    "Đang xem 0 đến 0 trong tổng số 0 mục",
+                    "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+                    "sInfoPostFix":  "",
+                    "sUrl":          "",
+                    "oPaginate": {
+                        "sFirst":    "Đầu",
+                        "sPrevious": "Trước",
+                        "sNext":     "Tiếp",
+                        "sLast":     "Cuối"
+                    }
+                }
+            });
+        } );
+    </script>
+</body>
+</html>

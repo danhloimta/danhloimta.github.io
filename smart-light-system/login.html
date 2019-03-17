@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMART LIGHTING SYSTEM</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Vue.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="row">
+                <div class="col-md-5">
+                    <nav class="nav">
+                        <a href="index.html" class="nav-link">
+                            <img src="img/Vue.png" alt="" class="logo">
+                        </a>
+                        <a class="nav-link" href="#">Cài đặt</a>
+                    </nav>
+                </div>
+                <div class="col-md-2">
+                    <div id="time"></div>
+                </div>
+                <div class="col-md-5">
+                    <ul class="nav justify-content-end menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">ĐK Nhóm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ĐK Kịch bản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="main">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                   Login here
+                   
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="icon">
+                    <button class="power"><i class="fas fa-power-off"></i></button>
+                </div>
+                <div class="ft">
+                    <div class="form-group">
+                        <div class="select">
+                            <select name="" id="" class="form-control system">
+                                <option value="1">Online mode</option>
+                                <option value="0">Offline mode</option>
+                            </select>
+                        </div>
+                        <label for="" class="system-name"><span>SMART LIGHTING SYSTEM</span></label>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Tạo lịch điều khiển</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Tên lịch</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập tên lịch" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Kiểu</label>
+                        <select name="status" id="stt" class="form-control">
+                            <option value="1">Bật</option>
+                            <option value="0">Tắt</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Thời gian</label>
+                        <div class="row">
+                            <input type="number" name="" id="" class="form-control col-3 ml-3" placeholder="Giờ" aria-describedby="helpId" min="0" max="23">
+                            <input type="number" name="" id="" class="form-control col-3 ml-4" placeholder="Phút" aria-describedby="helpId" min="0" max="59">
+                            <input type="number" name="" id="" class="form-control col-3 ml-4" placeholder="Giây" aria-describedby="helpId" min="0" max="59">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Thời gian lặp lại</label>
+                        <div class="checkbox checkbox-info checkbox-circle">
+                            <label class="label">2
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">3
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">4
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">5
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">6
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">7
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">CN
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mô tả</label>
+                        <textarea name="description" id="" rows="4" placeholder="Mô tả" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Thêm</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

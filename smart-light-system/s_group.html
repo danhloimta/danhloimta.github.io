@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMART LIGHTING SYSTEM</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Vue.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="row">
+                <div class="col-md-5">
+                    <nav class="nav">
+                        <a href="index.html" class="nav-link">
+                            <img src="img/Vue.png" alt="" class="logo">
+                        </a>
+                        <a class="nav-link" href="setting.html">Cài đặt</a>
+                    </nav>
+                </div>
+                <div class="col-md-2">
+                    <div id="time"></div>
+                </div>
+                <div class="col-md-5">
+                    <ul class="nav justify-content-end menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">ĐK Nhóm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="script.html">ĐK Kịch bản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="main">
+        <div class="container content pt-4 s-equip">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-link">
+                        <a href="#" class="">Cài đặt </a>
+                        <span> / Nhóm thiết bị</span>
+                    </div>
+                    <div class="d-tab">
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade show active">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="search mb-4">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tạo nhóm</button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+
+                                            </div>
+                                        </div>
+                                        <div class="equipment">
+                                            <table class="table table-hover" id="datatable">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">STT</th>
+                                                        <th scope="col">Tên nhóm</th>
+                                                        <th scope="col">Mã nhóm</th>
+                                                        <th scope="col">Mô tả</th>
+                                                        <th scope="col">Icon</th>
+                                                        <th scope="col">Hoạt động</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Đỗ xe</td>
+                                                        <td>1211</td>
+                                                        <td>Điều khiển nhóm điều khiển xe, có 2 khu vực điều khiển là T1 và T2</td>
+                                                        <td>fa fa-car</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Giao thông</td>
+                                                        <td>1211</td>
+                                                        <td>Nhóm điều khiên đèn giao thông </td>
+                                                        <td>fa fa-change</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Khu kỹ thuật</td>
+                                                        <td>13211</td>
+                                                        <td>Dỡ và kiểm hàng chấp nhận hàng </td>
+                                                        <td>fa fa-cogs</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="icon">
+                    <button class="power"><i class="fas fa-power-off"></i></button>
+                </div>
+                <div class="ft">
+                    <div class="form-group">
+                        <div class="select">
+                            <select name="" id="" class="form-control system">
+                                <option value="1">Online mode</option>
+                                <option value="0">Offline mode</option>
+                            </select>
+                        </div>
+                        <label for="" class="system-name"><span>SMART LIGHTING SYSTEM</span></label>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Tạo nhóm</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Tên nhóm</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập tên nhóm" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mã nhóm </label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập mã nhóm" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Kiểu nhóm</label>
+                        <select name="status" id="stt" class="form-control">
+                            <option value="1">Kiểu 1</option>
+                            <option value="0">Kiểu 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Icon</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập mã icon" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Ghi chú</label>
+                        <textarea name="description" id="" rows="4" placeholder="Ghi chú" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Thêm</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#datatable').DataTable({
+                "language": {
+                    "sSearch": "Tìm Kiếm:",
+                    "sProcessing":   "Đang xử lý...",
+                    "sLengthMenu":   "Xem _MENU_ mục",
+                    "sZeroRecords":  "Không tìm thấy dòng nào phù hợp",
+                    "sInfo":         "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
+                    "sInfoEmpty":    "Đang xem 0 đến 0 trong tổng số 0 mục",
+                    "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+                    "sInfoPostFix":  "",
+                    "sUrl":          "",
+                    "oPaginate": {
+                        "sFirst":    "Đầu",
+                        "sPrevious": "Trước",
+                        "sNext":     "Tiếp",
+                        "sLast":     "Cuối"
+                    }
+                }
+            });
+        } );
+    </script>
+</body>
+</html>

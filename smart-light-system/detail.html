@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMART LIGHTING SYSTEM</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Vue.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="row">
+                <div class="col-md-5">
+                    <nav class="nav">
+                        <a href="index.html" class="nav-link">
+                            <img src="img/Vue.png" alt="" class="logo">
+                        </a>
+                        <a class="nav-link" href="setting.html">Cài đặt</a>
+                    </nav>
+                </div>
+                <div class="col-md-2">
+                    <div id="time"></div>
+                </div>
+                <div class="col-md-5">
+                    <ul class="nav justify-content-end menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">ĐK Nhóm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="script.html">ĐK Kịch bản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="main">
+        <div class="container content pt-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-link">
+                        <a href="#" class="">Điều khiển </a>
+                        <span> / Đường dốc</span>
+                    </div>
+                    <div class="d-tab">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a class="nav-link active" data-toggle="tab" href="#home">Từng thiết bị</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" data-toggle="tab" href="#menu1">Lịch điều khiển</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" data-toggle="tab" href="#menu2">Điện năng tiêu thụ</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" data-toggle="tab" href="#menu3">Cảm biến</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" data-toggle="tab" href="#menu4">Camera</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade show active">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="search mb-4">
+                                            <input type="text" placeholder="Tìm thiết bị" width="35%" class="form-control">
+                                        </div>
+                                        <div class="equipment">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Trạng thái</th>
+                                                        <th scope="col">STT</th>
+                                                        <th scope="col">Mã thiết bị</th>
+                                                        <th scope="col">Tên</th>
+                                                        <th scope="col">Mã điều khiển</th>
+                                                        <th scope="col">Trạng thái</th>
+                                                        <th scope="col">Giá trị</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="switchToggle active">
+                                                                <input type="checkbox" id="switch">
+                                                                <label for="switch">Toggle</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>TB1</td>
+                                                        <td>1</td>
+                                                        <td>Bật</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="switchToggle active">
+                                                                <input type="checkbox" id="switch2" checked>
+                                                                <label for="switch2">Toggle</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>2</td>
+                                                        <td>2</td>
+                                                        <td>TB2</td>
+                                                        <td>1</td>
+                                                        <td>Bật</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="switchToggle active">
+                                                                <input type="checkbox" id="switch3">
+                                                                <label for="switch3">Toggle</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>3</td>
+                                                        <td>3</td>
+                                                        <td>TB3</td>
+                                                        <td>1</td>
+                                                        <td>Tắt</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="switchToggle active">
+                                                                <input type="checkbox" id="switch4" checked>
+                                                                <label for="switch4">Toggle</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>TB4</td>
+                                                        <td>1</td>
+                                                        <td>Bật</td>
+                                                        <td>0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="d-img text-center">
+                                            <img src="img/light.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="search mb-4 float-right">
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Thêm lịch</button>
+                                        </div>
+                                        <div class="equipment">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">STT</th>
+                                                        <th scope="col">Trạng thái</th>
+                                                        <th scope="col">Tên lịch</th>
+                                                        <th scope="col">Kiểu điều khiển</th>
+                                                        <th scope="col">Thời gian</th>
+                                                        <th scope="col">T2</th>
+                                                        <th scope="col">T3</th>
+                                                        <th scope="col">T4</th>
+                                                        <th scope="col">T5</th>
+                                                        <th scope="col">T6</th>
+                                                        <th scope="col">T7</th>
+                                                        <th scope="col">CN</th>
+                                                        <th scope="col">Hoạt động</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switchToggle active">
+                                                                <input type="checkbox" id="switch5">
+                                                                <label for="switch5">Toggle</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>DK3</td>
+                                                        <td>TẮT</td>
+                                                        <td>16:15:00</td>
+                                                        <td></td>
+                                                        <td><i class="fas fa-check"></i></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            <div class="switchToggle active">
+                                                                <input type="checkbox" id="switch6">
+                                                                <label for="switch6">Toggle</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>DK3</td>
+                                                        <td>BẬT</td>
+                                                        <td>19:15:00</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><i class="fas fa-check"></i></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-sm btn-info"><i class="far fa-edit"></i></a>
+                                                            <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-3 col-form-label text-center">Ngày bắt đầu</label>
+                                            <div class="col-sm-9">
+                                                <input type="date" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-3 col-form-label">Ngày kết thúc</label>
+                                            <div class="col-sm-9">
+                                                <input type="date" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pl-4 pr-4">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">STT</th>
+                                                <th scope="col">Tên thiết bị</th>
+                                                <th scope="col">Mã thiết bị</th>
+                                                <th scope="col">Công suất</th>
+                                                <th scope="col">Số giờ bật</th>
+                                                <th scope="col">Điện năng tiêu thụ dự kiến</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>DK1</td>
+                                                <td>1</td>
+                                                <td>20</td>
+                                                <td>452.00h</td>
+                                                <td>9040.03W</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>DK2</td>
+                                                <td>1</td>
+                                                <td>20</td>
+                                                <td>452.00h</td>
+                                                <td>9040.03W</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>DK3</td>
+                                                <td>1</td>
+                                                <td>20</td>
+                                                <td>452.00h</td>
+                                                <td>9040.03W</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <th>Tổng</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>1332.00h</th>
+                                            <th>181818W</th>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                                <h3>Cảm biến</h3>
+                                <p>Thông tin và điều khiển cảm biến</p>
+                            </div>
+                            <div id="menu4" class="tab-pane fade">
+                                <h3>Camera </h3>
+                                <p>Thông tin và điều khiển camera</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="icon">
+                    <button class="power"><i class="fas fa-power-off"></i></button>
+                </div>
+                <div class="ft">
+                    <div class="form-group">
+                        <div class="select">
+                            <select name="" id="" class="form-control system">
+                                <option value="1">Online mode</option>
+                                <option value="0">Offline mode</option>
+                            </select>
+                        </div>
+                        <label for="" class="system-name"><span>SMART LIGHTING SYSTEM</span></label>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Tạo lịch điều khiển</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Tên lịch</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="Nhập tên lịch" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Kiểu</label>
+                        <select name="status" id="stt" class="form-control">
+                            <option value="1">Bật</option>
+                            <option value="0">Tắt</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Thời gian</label>
+                        <div class="row">
+                            <input type="number" name="" id="" class="form-control col-3 ml-3" placeholder="Giờ" aria-describedby="helpId" min="0" max="23">
+                            <input type="number" name="" id="" class="form-control col-3 ml-4" placeholder="Phút" aria-describedby="helpId" min="0" max="59">
+                            <input type="number" name="" id="" class="form-control col-3 ml-4" placeholder="Giây" aria-describedby="helpId" min="0" max="59">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Thời gian lặp lại</label>
+                        <div class="checkbox checkbox-info checkbox-circle">
+                            <label class="label">2
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">3
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">4
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">5
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">6
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">7
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label">CN
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mô tả</label>
+                        <textarea name="description" id="" rows="4" placeholder="Mô tả" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Thêm</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
