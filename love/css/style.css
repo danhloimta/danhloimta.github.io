@@ -1,0 +1,133 @@
+body, html {
+    font-family: 'Comfortaa', cursive;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background: #DD5E89;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F7BB97, #DD5E89);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F7BB97, #DD5E89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100%;
+    /* position: relative; */
+}
+
+/* .col-md-6 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+
+/* .main-content {
+    width: 100%;
+} */
+
+.main-content {
+    text-align: center;
+    color: #fff;
+    padding: 70px 0;
+    background: #fff;
+    border-radius: 15px;
+    transform: translateY(5%);
+}
+
+.title h4 {
+    text-transform: uppercase;
+    color: #9b59b6;
+    font-size: 2.1rem;
+}
+
+.days {
+    padding: 10px 0;
+    width: 500px;
+    margin: auto;
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 100px;
+    margin-top: 40px;
+}
+
+.days p {
+    margin: 0;
+}
+
+.count-days p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.timer p {
+    font-size: 26px;
+}
+
+img.ava-user {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.user {
+    float: left;
+    width: 300px
+}
+
+.couple {
+    width: 700px;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: 30px;
+    color: #8e44ad;
+}
+
+.bride.user {
+    float: right;
+    text-align: right;
+}
+
+.groom {
+    text-align: left;
+}
+
+.heart img {
+    width: 50px;
+    transition: 0.5s;
+    animation: beat 1.5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes beat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0px); }
+}
+
+.heart {
+    float: left;
+    width: 100px;
+}
+
+.heart h4 {
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.user-name {
+    margin-top: 18px;
+}
+
+.groom .avatar {
+    padding-left: 20px;
+}
+
+.bride .avatar {
+    padding-right: 18px;
+}
+
+.count-days p {
+    color: #ed078a;
+    font-size: 19px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
