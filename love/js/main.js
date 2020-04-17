@@ -72,4 +72,29 @@ CountUp.prototype.calculate = function (id) {
     setTimeout(function () { self.calculate(id); }, 1000);
 }
 
-new CountUp('Jun 18 2019 00:00:00', 'counter', "");
+new CountUp('11 03 2019 00:00:00', 'counter', "");
+
+showDiff();
+
+function showDiff(){
+    var date1 = new Date("2019/11/3 00:00:00");   
+    var date2 = new Date();
+    //Customise date2 for your required future time
+    
+    var diff = (date2 - date1)/1000;
+    var diff = Math.abs(Math.floor(diff));
+    
+    var years = Math.floor(diff/(365*24*60*60));
+    var leftSec = diff - years * 365*24*60*60;
+  
+    var month = Math.floor(leftSec/((365/12)*24*60*60));
+    var leftSec = leftSec - month * (365/12)*24*60*60;    
+    
+    var days = Math.floor(leftSec/(24*60*60));
+    var leftSec = leftSec - days * 24*60*60;
+
+    document.getElementById("time-diff").innerHTML = 
+    (years ? (years + " năm ") : ' ')
+    + (month ? (month + " tháng ") : ' ')
+    + (days ? (days + " ngày") : ' ');
+}
