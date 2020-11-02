@@ -1,0 +1,20 @@
+.icon {
+    font-size: 1.5rem;
+}
+
+.icon-m {
+    font-size: 2.5rem;
+}
+
+.icon-l {
+    font-size: 3rem;
+}
+
+body, h4, h5 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h4, h5 {
+    font-weight: bold;
+
+}
